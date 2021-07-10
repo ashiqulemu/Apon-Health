@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apon Health</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
- 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
 </head>
 
 <body>
@@ -23,15 +23,15 @@
                         <img src="/images/logo.png " class="img-fluid" alt="Apon Health">
                     </a>
                 </div>
-                <div class="category"> 
-                   <select name="" id="" class="form-control">
-                       <option value="" selected>choose category...</option>
-                       <option value="">choose category 1 </option>
-                       <option value="">choose category 1 </option>
-                       <option value="">choose category 1 </option>
-                       <option value="">choose category 1 </option>
-                       <option value="">choose category 1 </option>
-                   </select>
+                <div class="category">
+                    <select name="" id="" class="form-control">
+                        <option value="" selected>choose category...</option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                    </select>
                 </div>
                 <div class="search">
                     <form action="">
@@ -55,71 +55,347 @@
         </div>
     </section>
 
-  <!-- Slider main container -->
-<div class="swiper-container mt--1">
-    <!-- Additional required wrapper -->
+    <!-- Slider main container -->
+    <div class="swiper-container mt--1">
+        <!-- Additional required wrapper -->
         <!-- If we need navigation buttons -->
-       <div class="control">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-       </div>
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="/images/banner/2.jpg" alt="" class="img-fluid">
-      </div> 
-      <div class="swiper-slide">
-          <img src="/images/banner/1.jpg" alt="" class="img-fluid">
-      </div>
-      
-      <div class="swiper-slide">
-        <img src="/images/banner/3.jpg" alt="" class="img-fluid">
-      </div> 
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div> 
-  </div>
+        <div class="control">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="/images/banner/2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="swiper-slide">
+                <img src="/images/banner/1.jpg" alt="" class="img-fluid">
+            </div>
 
-  <section class="instruction">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-4">
-                  <a href="">
-                    <div class="infoBox">
-                        <div class="tag">
-                            upto 10% off + cashback
+            <div class="swiper-slide">
+                <img src="/images/banner/3.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="instruction">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="">
+                        <div class="infoBox">
+                            <div class="tag">
+                                upto 10% off + cashback
+                            </div>
+                            <img src="/images/images/prescription.png" class="img-fluid w-50">
+                            <div class="title">Upload Prescription</div>
                         </div>
-                        <img src="/images/images/prescription.png" class="img-fluid w-50">
-                        <div class="title">Upload Prescription</div>
-                    </div>
-                  </a>                 
-              </div>
-              <div class="col-lg-4">
-                  <a href="">
-                    <div class="infoBox">
-                         <div class="tag">
-                            upto 10% off + cashback
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="">
+                        <div class="infoBox">
+                            <div class="tag">
+                                upto 10% off + cashback
+                            </div>
+                            <img src="/images/images/telephone.png" class="img-fluid w-50">
+                            <div class="title">Call to order <small>(10am - 10pm)</small></div>
                         </div>
-                        <img src="/images/images/telephone.png" class="img-fluid w-50">
-                        <div class="title">Call to order <small>(10am - 10pm)</small></div>
-                    </div>
-                  </a>
-              </div>
-              <div class="col-lg-4">
-                <a href="">
-                    <div class="infoBox">
-                         <div class="tag">
-                            upto 10% off + cashback
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="">
+                        <div class="infoBox">
+                            <div class="tag">
+                                upto 10% off + cashback
+                            </div>
+                            <img src="/images/images/health-insurance.png" class="img-fluid w-50">
+                            <div class="title">HealthCare Products</div>
                         </div>
-                        <img src="/images/images/health-insurance.png" class="img-fluid w-50">
-                        <div class="title">HealthCare Products</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="howTo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-2 d-flex flex-column justify-content-center">
+                    <h3 class='title'>আরোগ্য থেকে অর্ডার কিভাবে করবেন?</h3>
+                    <ul class="process">
+                        <li>
+                            <div class="marker">১</div>প্রেস্ক্রিপশনের ছবি আপলোড করুন অথবা ঔষধ সার্চ করে কিনুন।
+                        </li>
+                        <li>
+                            <div class="marker">২</div>আমাদের 'A Grade Pharmacist' আপনাকে ফোন করে অর্ডার কনফার্ম করবেন।
+                        </li>
+                        <li>
+                            <div class="marker">৩</div>১৮-৪৮ ঘন্টার মধ্য আপনার ডেলিভারি বুঝে নিন।
+                        </li>
+                    </ul>
+                    <h3 class="title">ডাউনলোড করুন আরোগ্য এপ, আর উপভোগ করুন আকর্ষণীয় মূল্যছাড়।</h3>
+                    <div class="w-100 mt-3 d-flex justify-content-center">
+                        <a href=" " target="_blank">
+                            <img class="img-fluid mx-1" src="./images/images/google_play.png">
+                        </a>
+                        <a href="" target="_blank">
+                            <img class="img-fluid mx-1" src="./images/images/apple_store.png" />
+                        </a>
                     </div>
-                </a>
-              </div>
-            
-          </div>
-      </div>
-  </section>
+                </div>
+                <div class="col-lg-6">
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/NMzJScUP5uo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="productSlider">
+        <div class="coating">
+            <div class="container">
+                <h3 class="section-title">Medecine </h3>
+                <div class="grid-x grid-margin-x slider">
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97 w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cell auto slides">
+                        <div class="card text-center w-97">
+                            <div class="card-body p-0 shadow-sm">
+                                <div class="card-image">
+                                    <a href="#" class="d-block" tabindex="0">
+                                        <img src="https://www.pharmiweb.com/media/9088/gavreto_pralsetinib_100_mg_bottles_capsules.jpg?anchor=center&amp;mode=crop&amp;width=300&amp;height=300&amp;rnd=132437349100000000"
+                                            height="200px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <span class="product-price ">৳7.00</span>
+                                <a href="https://aponhealth.com/product/Acifix-20mg-NXtXY" tabindex="0">Acifix 20mg</a>
+                                <div class="addCart">
+                                    <span class="iconify" data-icon="ei:heart" data-inline="false"></span>
+                                    <button type="button" class="addTocart" onclick="showAddToCartModal(2842)">
+                                        <span class="iconify mr-1" data-icon="clarity:shopping-cart-line"
+                                            data-inline="false"></span> Add to cart
+                                    </button>
+                                    <span class="iconify" data-icon="icons8:refresh" data-inline="false"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- <footer>
         <div class="container">
@@ -185,30 +461,104 @@
     <script src="https://code.iconify.design/2/2.0.1/iconify.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src='./js/app.js'> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  autoplay: {
-   delay: 5000,
- },
-  loop: true,
-  effect: 'fade',
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable:true    
+            // Optional parameters
+            direction: 'horizontal',
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+            effect: 'fade',
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
 
-  },
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+        $('.slider').slick({
+            arrows: true,
+            infinite: true,
+            slidesToShow: 3,
+            accessibility: true,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            prevArrow: "<span class='arrow prev'><i class='fas fa-angle-left'></i></span>",
+            nextArrow: "<span class='arrow next'><i class='fas fa-angle-right'></i></span>",
+            customPaging: function (slider, i) {
+                /* ADDING CUSTOM PAGING
+                 Example
+                 return  return '<li>Something you want to insert</li>';
+         */
+            },
+            responsive: [
+                {
+                    breakpoint: 1920,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 425,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
 
-});
+            ]
+        });
     </script>
 </body>
 
