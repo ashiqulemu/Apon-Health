@@ -384,7 +384,7 @@ body {
 
 .productSlider .coating {
   position: relative;
-  height: 350px;
+  height: 390px;
 }
 
 .productSlider .coating .slider .slick-dots {
@@ -424,7 +424,7 @@ body {
 
 .productSlider .coating .slider .arrow {
   position: absolute;
-  top: 40%;
+  top: 30%;
   z-index: 2;
   cursor: pointer;
   padding: 15px;
@@ -455,6 +455,7 @@ body {
           align-items: center;
   margin-bottom: 12px;
   margin-top: 9px;
+  padding: 0 4px;
 }
 
 .productSlider .addCart .iconify {
@@ -499,12 +500,126 @@ body {
 }
 
 .section-title {
-  border-bottom: 2px solid #f3f3f3;
+  text-transform: capitalize;
   margin-bottom: 25px;
-  padding-bottom: 11px;
+  padding: 6px 14px;
+  position: relative;
+  font-size: 23px;
+  border-bottom: 2px solid;
+}
+
+.section-title a {
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+  top: 6px;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.section-title.maroon {
+  color: #fff;
+  background: linear-gradient(45deg, maroon 22%, transparent 5%);
+  border-color: maroon;
+}
+
+@media (max-width: 768px) {
+  .section-title.maroon {
+    background: linear-gradient(45deg, maroon 40%, transparent 5%);
+  }
+}
+
+.section-title.maroon a {
+  background: maroon;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title.purple {
+  color: #fff;
+  background: linear-gradient(45deg, #B23E94 22%, transparent 5%);
+  border-color: #B23E94;
+}
+
+@media (max-width: 768px) {
+  .section-title.purple {
+    background: linear-gradient(45deg, #B23E94 40%, transparent 5%);
+  }
+}
+
+.section-title.purple a {
+  background: #B23E94;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title.lightblue {
+  color: #fff;
+  background: linear-gradient(45deg, #00BAE5 22%, transparent 5%);
+  border-color: #00BAE5;
+}
+
+@media (max-width: 768px) {
+  .section-title.lightblue {
+    background: linear-gradient(45deg, #00BAE5 40%, transparent 5%);
+  }
+}
+
+.section-title.lightblue a {
+  background: #00BAE5;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title.pink {
+  color: #fff;
+  background: linear-gradient(45deg, #FF3A97 22%, transparent 5%);
+  border-color: #FF3A97;
+}
+
+@media (max-width: 768px) {
+  .section-title.pink {
+    background: linear-gradient(45deg, #FF3A97 40%, transparent 5%);
+  }
+}
+
+.section-title.pink a {
+  background: #FF3A97;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-title.orange {
+  color: #fff;
+  background: linear-gradient(45deg, #ed4336 22%, transparent 5%);
+  border-color: #ed4336;
+}
+
+@media (max-width: 768px) {
+  .section-title.orange {
+    background: linear-gradient(45deg, #ed4336 40%, transparent 5%);
+  }
+}
+
+.section-title.orange a {
+  background: #FF4635;
+  color: #fff;
+  text-decoration: none;
 }
 
 .w-97 {
   width: 97%;
+}
+
+footer {
+  background: #007FF8;
+}
+
+footer .nav-item a {
+  font-size: 14px;
+}
+
+footer .social-sites li a .iconify {
+  font-size: 25px;
 }
 /*# sourceMappingURL=app.css.map */
