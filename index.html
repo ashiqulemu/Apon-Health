@@ -16,38 +16,21 @@
 <body>
 
     <!-- header section -->
-    <section class="header shadow-sm">
-        <div class="container">
-            <div class="header-portion">
-                <div class="mobile-menu-icon" onclick="collapsMenu()" >
-                    <span class="iconify" data-icon="gg:menu" data-inline="false"></span>
-                </div>
-                <div class="menu-content" id='mobileMenu'>
-                    <div class="profile">
-                        <img src="/images/images/user.png" alt="">
-                        <h6>John Landish</h6> 
-                    </div>
-                    <div class="cash">
-                        <p>
-                            Cash: 120 Tk <br> 
-                            Pending : 120 Tk
-                        </p>
-                    </div>
-                    <div class="menuItems">
-                        <ul>
-                            <li><a href="">My Profile</a></li>
-                            <li><a href="">My order</a></li>
-                            <li><a href="">Gift your friend</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Logout</a></li>
-                        </ul>
-                    </div>
-                    <div class="close" onclick="closeMenu()"><span class="iconify" data-icon="eva:close-circle-fill" data-inline="false"></span></div>
-                </div>
+    <section class="header">
+        <div class="container ">
+            <div class="header-portion"> 
                 <div class="brand">
                     <a href="">
                         <img src="/images/logo.png " class="img-fluid" alt="Apon Health">
                     </a>
+                    <select class='cat-mobile'>
+                        <option value="" selected="selected">Choose a Category  </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                        <option value="">choose category 1 </option>
+                    </select>
                 </div>
                 <div class="category">
                     <select name="" id="" class="form-control">
@@ -62,22 +45,63 @@
                 <div class="search">
                     <form action="">
                         <div class="search-box">
-                            <input type="search" class="form-control medicineSearch"
-                                placeholder="Search for medicine/health products">
+                            <input type="search" class="form-control medicineSearch" placeholder="Search for medicine ">
                             <!-- <button class="searchButton"><span class="iconify" data-icon="clarity:search-line" data-inline="false"></span></button> -->
                         </div>
                     </form>
                 </div>
                 <div class="buttons_link">
-                    <button class="btn btn-sm btn-primary">Button 1</button>
-                    <button class="btn btn-sm btn-primary">Button 2</button>
+                   <img src="./images/images/upload.jpg" class="img-fluid">
+                   <img src="./images/images/member.jpg" class="img-fluid">
                 </div>
                 <div class="links">
-                    <a href=""><span class="iconify" data-icon="ph:user-thin" data-inline="false"></span></a>
-                    <a href=""><span class="iconify" data-icon="bx:bxs-offer" data-inline="false"></span></a>
-                    <a href=""><span class="iconify" data-icon="emojione:shopping-cart" data-inline="false"></span></a>
+                    <a href=""><img src="./images//images/Screenshot_1.png"></a>
+                    <a href=""><img src="./images//images/discount_home.png"></a>
+                    <a href="">
+                        <img src="./images//images/shopping-cart.png">
+                        <div class="cartitem">
+                           99
+                        </div>
+                    </a>
+
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="mobileSearch">
+        <div class="container">
+            <div class="mobileSearchArea">
+              
+                <input type="search" class="form-control" placeholder="search for medicine">
+                <div class="mobile-menu-icon" onclick="collapsMenu()">
+                    <span class="iconify" data-icon="gg:menu" data-inline="false"></span>
+                </div>
+                <div class="menu-content" id='mobileMenu'>
+                    <div class="profile">
+                        <img src="/images/images/user.png" alt="">
+                        <h6>John Landish</h6>
+                    </div>
+                    <div class="cash">
+                        <p>
+                            Cash: 120 Tk <br>
+                            Pending : 120 Tk
+                        </p>
+                    </div>
+                    <div class="menuItems">
+                        <ul>
+                            <li><a href="">My Profile</a></li>
+                            <li><a href="">My order</a></li>
+                            <li><a href="">Gift your friend</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="close" onclick="closeMenu()"><span class="iconify" data-icon="eva:close-circle-fill"
+                            data-inline="false"></span></div>
+                </div>
+            </div>
+           
         </div>
     </section>
 
@@ -108,7 +132,7 @@
 
     <section class="instruction">
         <div class="container">
-            <div class="row">
+            <div class="row controlInstruction">
                 <div class="col-lg-4">
                     <a href="">
                         <div class="infoBox">
@@ -127,7 +151,7 @@
                                 upto 10% off + cashback
                             </div>
                             <img src="/images/images/telephone.png" class="img-fluid">
-                            <div class="title">Call to order <br ><small>(10am - 10pm)</small></div>
+                            <div class="title">Call to order <br><small>(10am - 10pm)</small></div>
                         </div>
                     </a>
                 </div>
@@ -150,7 +174,7 @@
     <section class="howTo">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 my-2 d-flex flex-column justify-content-center">
+                <div class="col-md-6 my-3 d-flex flex-column justify-content-center">
                     <h3 class='title'>আরোগ্য থেকে অর্ডার কিভাবে করবেন?</h3>
                     <ul class="process">
                         <li>
@@ -189,8 +213,8 @@
         <div class="coating">
             <div class="container">
                 <h3 class="section-title orange">
-                    <span class="iconify" data-icon="bx:bxs-capsule" data-inline="false"></span> capsule 
-                    <a href="#">View all</a> 
+                    <span class="iconify" data-icon="bx:bxs-capsule" data-inline="false"></span> capsule
+                    <a href="#">View all</a>
                 </h3>
                 <div class="grid-x grid-margin-x slider">
                     <div class="cell auto slides">
@@ -433,7 +457,8 @@
     <section class="productSlider mb-4">
         <div class="coating">
             <div class="container">
-                <h3 class="section-title purple"><span class="iconify" data-icon="la:capsules" data-inline="false"></span> Tablet <a href=''>View all</a></h3>
+                <h3 class="section-title purple"><span class="iconify" data-icon="la:capsules"
+                        data-inline="false"></span> Tablet <a href=''>View all</a></h3>
                 <div class="grid-x grid-margin-x slider">
                     <div class="cell auto slides">
                         <div class="card text-center w-97">
@@ -675,7 +700,8 @@
     <section class="productSlider mb-4">
         <div class="coating">
             <div class="container">
-                <h3 class="section-title lightblue"><span class="iconify" data-icon="fontisto:injection-syringe" data-inline="false"></span> injection <a href=''>View all</a></h3>
+                <h3 class="section-title lightblue"><span class="iconify" data-icon="fontisto:injection-syringe"
+                        data-inline="false"></span> injection <a href=''>View all</a></h3>
                 <div class="grid-x grid-margin-x slider">
                     <div class="cell auto slides">
                         <div class="card text-center w-97">
@@ -917,7 +943,8 @@
     <section class="productSlider mb-4">
         <div class="coating">
             <div class="container">
-                <h3 class="section-title pink"><span class="iconify" data-icon="ic:sharp-sanitizer" data-inline="false"></span> sanitizer <a href="">View all</a></h3>
+                <h3 class="section-title pink"><span class="iconify" data-icon="ic:sharp-sanitizer"
+                        data-inline="false"></span> sanitizer <a href="">View all</a></h3>
                 <div class="grid-x grid-margin-x slider">
                     <div class="cell auto slides">
                         <div class="card text-center w-97">
@@ -1228,17 +1255,18 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2">
-                        <h5 class="text-white">DOWNLOAD OUR APP</h5>
+                        <h5 class="text-white">OUR APP</h5>
                         <!-- Nav Link -->
                         <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                             <li class="nav-item w-100">
                                 <a class="py-1 d-block app_download_link" href=" ">
-                                    <img  loading="lazy" class='img-fluid' src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
+                                    <img loading="lazy" class='img-fluid'
+                                        src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
                                 </a>
                             </li>
                             <li class="nav-item w-100">
                                 <a class="py-1 d-block app_download_link" href=" "><img class='img-fluid' loading="lazy"
-                                        src="./images/images/apple_store.png"  ></a>
+                                        src="./images/images/apple_store.png"></a>
                             </li>
                         </ul>
                         <!-- End Nav Link -->
