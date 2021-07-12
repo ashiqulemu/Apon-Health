@@ -58,6 +58,104 @@ body {
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+
+    .mobile-menu-icon {
+      position: absolute;
+      right: 0;
+      display: none;
+      font-size: 2.4rem;
+      top: 15px;
+      border: 1px solid #3b7cff;
+      color: #3b7cff;
+      cursor: pointer;
+
+      @media(max-width:768px) {
+        display: block;
+      }
+    }
+
+    .menu-content {
+      display: block;
+      position: fixed;
+      top: 0px;
+      background: #623bff;
+      left: -250px;
+      width: 250px;
+      bottom: 0;
+      z-index: 3;
+      padding: 20px 15px;
+      transition: all 0.4s ease;
+
+      &.active {
+        box-shadow: 6px 3px 20px -9px;
+        left: 0;
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 90px;
+        }
+
+        h6 {
+          margin-top: 10px;
+          color: #f7f7f7;
+        }
+      }
+
+      .cash {
+        font-size: 14px;
+        padding: 8px 3px;
+        text-align: center;
+        background: #724fff;
+        color: #e2d5d7;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .menuItems {
+        ul {
+          margin-top: 17px;
+          padding: 0;
+          margin-bottom: 0;
+
+          li {
+            list-style: none;
+
+            a {
+              display: block;
+              color: #fff;
+              font-size: 14px;
+              padding: 5px 12px;
+              margin: 4px 0;
+              border-radius: 3px;
+              text-decoration: none;
+
+              &:hover {
+                background: #7352F7;
+              }
+            }
+          }
+        }
+      }
+
+      .close {
+        position: absolute;
+        color: #fff;
+        top: 12px;
+        right: 15px;
+        font-size: 2rem;
+      }
+    }
 
     .brand {
       flex-basis: 190px;
@@ -193,6 +291,21 @@ body {
 .swiper-container {
   width: 100%;
   height: 400px;
+
+  @media(max-width:768px) {
+    height:223px;
+  }
+  @media(max-width:600px) {
+    height:175px;
+  }
+
+  @media(max-width:480px) {
+    height: 140px!important;    
+  }
+
+  @media(max-width:425px) {
+    height: 121px !important;
+  }
 }
 
 .swiper-slide {
@@ -397,16 +510,25 @@ body {
         padding: 15px;
         border-radius: 5px;
 
+
         i {
           font-size: 32px;
         }
 
         &.prev {
           left: -45px;
+
+          @media(max-width:600px) {
+            display: none !important;
+          }
         }
 
         &.next {
           right: -45px;
+
+          @media(max-width:600px) {
+            display: none !important;
+          }
         }
       }
     }
@@ -420,6 +542,7 @@ body {
     margin-bottom: 12px;
     margin-top: 9px;
     padding: 0 4px;
+
     .iconify {
       font-size: 20px;
 
@@ -460,12 +583,13 @@ body {
 }
 
 .section-title {
-    text-transform: capitalize; 
-    margin-bottom: 25px;
-    padding: 6px 14px;
-    position: relative;
-    font-size: 23px;
-    border-bottom: 2px solid;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  padding: 6px 14px;
+  position: relative;
+  font-size: 23px;
+  border-bottom: 2px solid;
+
   a {
     position: absolute;
     right: 0;
@@ -477,11 +601,13 @@ body {
 
   &.maroon {
     color: $white;
-    background: linear-gradient(45deg, maroon 22%, transparent 5%); 
+    background: linear-gradient(45deg, maroon 22%, transparent 5%);
     border-color: maroon;
-      @media(max-width:768px){
-        background: linear-gradient(45deg, maroon 40%, transparent 5%);
-      }
+
+    @media(max-width:768px) {
+      background: linear-gradient(45deg, maroon 40%, transparent 5%);
+    }
+
     a {
       background: maroon;
       color: $white;
@@ -491,11 +617,13 @@ body {
 
   &.purple {
     color: $white;
-    background: linear-gradient(45deg, #B23E94 22%, transparent 5%); 
+    background: linear-gradient(45deg, #B23E94 22%, transparent 5%);
     border-color: #B23E94;
-    @media(max-width:768px){
-      background: linear-gradient(45deg, #B23E94 40%, transparent 5%); 
+
+    @media(max-width:768px) {
+      background: linear-gradient(45deg, #B23E94 40%, transparent 5%);
     }
+
     a {
       background: #B23E94;
       color: $white;
@@ -505,11 +633,13 @@ body {
 
   &.lightblue {
     color: $white;
-    background: linear-gradient(45deg, #00BAE5 22%, transparent 5%); 
+    background: linear-gradient(45deg, #00BAE5 22%, transparent 5%);
     border-color: #00BAE5;
-    @media(max-width:768px){
-      background: linear-gradient(45deg, #00BAE5 40%, transparent 5%); 
+
+    @media(max-width:768px) {
+      background: linear-gradient(45deg, #00BAE5 40%, transparent 5%);
     }
+
     a {
       background: #00BAE5;
       color: $white;
@@ -519,11 +649,13 @@ body {
 
   &.pink {
     color: $white;
-    background: linear-gradient(45deg, #FF3A97 22%, transparent 5%); 
+    background: linear-gradient(45deg, #FF3A97 22%, transparent 5%);
     border-color: #FF3A97;
-    @media(max-width:768px){
-      background: linear-gradient(45deg, #FF3A97 40%, transparent 5%); 
+
+    @media(max-width:768px) {
+      background: linear-gradient(45deg, #FF3A97 40%, transparent 5%);
     }
+
     a {
       background: #FF3A97;
       color: $white;
@@ -533,11 +665,13 @@ body {
 
   &.orange {
     color: $white;
-    background: linear-gradient(45deg, #ed4336 22%, transparent 5%); 
+    background: linear-gradient(45deg, #ed4336 22%, transparent 5%);
     border-color: #ed4336;
-    @media(max-width:768px){
-      background: linear-gradient(45deg, #ed4336 40%, transparent 5%);  
+
+    @media(max-width:768px) {
+      background: linear-gradient(45deg, #ed4336 40%, transparent 5%);
     }
+
     a {
       background: #FF4635;
       color: $white;

@@ -19,6 +19,31 @@
     <section class="header shadow-sm">
         <div class="container">
             <div class="header-portion">
+                <div class="mobile-menu-icon" onclick="collapsMenu()" >
+                    <span class="iconify" data-icon="gg:menu" data-inline="false"></span>
+                </div>
+                <div class="menu-content" id='mobileMenu'>
+                    <div class="profile">
+                        <img src="/images/images/user.png" alt="">
+                        <h6>John Landish</h6> 
+                    </div>
+                    <div class="cash">
+                        <p>
+                            Cash: 120 Tk <br> 
+                            Pending : 120 Tk
+                        </p>
+                    </div>
+                    <div class="menuItems">
+                        <ul>
+                            <li><a href="">My Profile</a></li>
+                            <li><a href="">My order</a></li>
+                            <li><a href="">Gift your friend</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="close" onclick="closeMenu()"><span class="iconify" data-icon="eva:close-circle-fill" data-inline="false"></span></div>
+                </div>
                 <div class="brand">
                     <a href="">
                         <img src="/images/logo.png " class="img-fluid" alt="Apon Health">
@@ -1208,11 +1233,11 @@
                         <ul class="nav nav-sm nav-x-0 nav-white flex-column">
                             <li class="nav-item w-100">
                                 <a class="py-1 d-block app_download_link" href=" ">
-                                    <img  loading="lazy" src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
+                                    <img  loading="lazy" class='img-fluid' src="http://127.0.0.1:5500/images/images/google_play.png" alt="">
                                 </a>
                             </li>
                             <li class="nav-item w-100">
-                                <a class="py-1 d-block app_download_link" href=" "><img loading="lazy"
+                                <a class="py-1 d-block app_download_link" href=" "><img class='img-fluid' loading="lazy"
                                         src="./images/images/apple_store.png"  ></a>
                             </li>
                         </ul>
