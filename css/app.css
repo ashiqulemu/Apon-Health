@@ -78,6 +78,11 @@ body {
     color: #6c757d;
     margin-top: 3px;
     background: transparent;
+    border: 1px solid #e4e4e8;
+    padding: 5px;
+    border-radius: 13px;
+    outline: 0;
+    margin-right: auto;
   }
 }
 

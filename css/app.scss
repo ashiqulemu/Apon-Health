@@ -67,15 +67,22 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
-      .cat-mobile{
+
+      .cat-mobile {
         display: none;
-        @media(max-width:768px){
+
+        @media(max-width:768px) {
           display: block;
           border: 0;
           font-size: 13px;
           color: #6c757d;
           margin-top: 3px;
           background: transparent;
+          border: 1px solid #e4e4e8;
+          padding: 5px;
+          border-radius: 13px;
+          outline: 0;
+          margin-right: auto;
         }
       }
     }
@@ -204,13 +211,15 @@ body {
       }
 
       a {
-        margin: 0 1px; 
+        margin: 0 1px;
         position: relative;
+
         img {
           height: 46px;
           width: 46px;
         }
-        .cartitem{
+
+        .cartitem {
           height: 23px;
           width: 23px;
           border-radius: 50%;
@@ -409,17 +418,21 @@ body {
 .controlInstruction {
   @media(max-width:768px) {
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
+
     .col-lg-4 {
-      padding: 0; 
+      padding: 0;
+
       .infoBox {
         min-height: 137px;
         padding: 5px 0;
         margin: 0 2px;
         align-items: flex-start;
-        @media(max-width:320px){
+
+        @media(max-width:320px) {
           min-height: 160px;
         }
+
         .tag {
           top: -11px;
           width: 48px;
@@ -430,8 +443,8 @@ body {
           background: #62ae43;
           line-height: 12px;
 
-          @media(max-width:320px){
-            right: 11px!important;
+          @media(max-width:320px) {
+            right: 11px !important;
           }
 
           &:after {
@@ -446,9 +459,10 @@ body {
 
         img {
           width: 40px;
-          margin-left:15px;
+          margin-left: 15px;
           margin-top: 14px;
-          @media(max-width:320px){
+
+          @media(max-width:320px) {
             margin-left: 2px;
           }
         }
@@ -459,7 +473,7 @@ body {
           font-size: 14px;
           margin-top: 11px;
           line-height: 18px;
-          
+
         }
       }
     }
@@ -740,9 +754,11 @@ body {
   position: relative;
   font-size: 23px;
   border-bottom: 2px solid;
+
   @media(max-width:600px) {
     font-size: 16px;
   }
+
   a {
     position: absolute;
     right: 0;
@@ -840,8 +856,8 @@ body {
 footer {
   background: #007FF8;
 
-  h5{
-  font-size: 18px;
+  h5 {
+    font-size: 18px;
   }
 
   .nav-item {
