@@ -374,16 +374,45 @@ body {
   background: #F0F2F5;
 }
 
+@media (max-width: 768px) {
+  .instruction {
+    padding: 20px 0;
+  }
+}
+
+.instruction a {
+  text-decoration: none;
+}
+
 .instruction a .infoBox {
   background: #fff;
   text-align: center;
   border: 1px solid #ececec;
   margin: 10px 0;
-  padding: 30px 0;
+  padding: 0 0;
   border-radius: 9px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .instruction a .infoBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .instruction a .infoBox .tag {
@@ -392,7 +421,7 @@ body {
   top: -11px;
   width: 84px;
   font-size: 14px;
-  height: 121px;
+  height: 108px;
   color: #fff;
   padding: 10px;
   background: #62ae43;
@@ -428,21 +457,14 @@ body {
 }
 
 .instruction a .infoBox .title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 5px;
   color: #353534;
   border-radius: 25px;
   padding: 9.4px 9px;
   display: inline-block;
-  width: 72%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .instruction a .infoBox .title {
-    font-size: 1.2rem;
-  }
 }
 
 .instruction a .infoBox .title small {
@@ -453,12 +475,7 @@ body {
 .instruction a .infoBox img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .instruction a .infoBox img {
-    width: 40% !important;
-  }
+  width: 90px;
 }
 
 .instruction a:hover .infoBox {
