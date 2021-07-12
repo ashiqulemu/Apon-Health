@@ -67,6 +67,10 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
+      @media(max-width:480px) {
+        top: -2px;
+        position: relative;
+      }
 
       .cat-mobile {
         display: none;
@@ -83,6 +87,8 @@ body {
           border-radius: 13px;
           outline: 0;
           margin-right: auto;
+          position: relative;
+          top: 18px;
         }
       }
     }
@@ -131,10 +137,19 @@ body {
       @media(max-width:768px) {
         flex-basis: 100%;
         padding: 0 10px;
+        display: block;
+        position: absolute;
+        top: 79px;
+        height: 28px;
+        right: -12px;
       }
 
       @media(max-width:600px) {
-        display: none;
+        // display: block;
+        // position: absolute;
+        // top: 82px;
+        // height: 28px;
+        // right: -12px;
       }
 
       button,
@@ -142,6 +157,29 @@ body {
         flex: 1;
         height: 45px;
         width: 120px;
+
+        @media(max-width:768px) {
+          height: 37px;
+        }
+        @media(max-width:480px) {
+          height: 34px;
+          width: 108px;
+          position: relative;
+          top: 5px;
+        }
+
+        @media(max-width:375px) {
+          height: 28px;
+          width: 90px;
+          position: relative;
+          top: 9px;
+        }
+        @media(max-width:320px) {
+          height: 25px;
+          width: 65px;
+          position: relative;
+          top: -8px;
+        }
       }
     }
 
@@ -207,7 +245,11 @@ body {
       align-items: center;
 
       @media(max-width:768px) {
-        margin-top: 7px 0;
+        top: -7px;
+        position: relative;
+      }
+      @media(max-width:375px) {
+        top: -11px; 
       }
 
       a {
@@ -241,6 +283,7 @@ body {
 .mobileSearch {
   position: relative;
   display: none;
+  margin-top: 34px;
 
   @media(max-width:768px) {
     display: block;
