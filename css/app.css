@@ -859,6 +859,12 @@ body {
   border-bottom: 2px solid;
 }
 
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 16px;
+  }
+}
+
 .section-title a {
   position: absolute;
   right: 0;
