@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apon Health</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -1223,7 +1223,7 @@
                         <div id="contact">
                             <h5 class="text-white">CONTACT US</h5>
                             <div class="text-white">
-                                <i class="fa fa-phone"></i>
+                                <span class="iconify" data-icon="dashicons:phone" data-inline="false"></span>
                                 01886335834
                             </div>
                             <ul class="list-inline mb-0 mt-3 social-sites">
@@ -1381,7 +1381,14 @@
                 {
                     breakpoint: 425,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 375,
+                    settings: {
+                        slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
