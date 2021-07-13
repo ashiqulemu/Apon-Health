@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-  padding-top: 16px;
+  padding: 16px 0;
 }
 
 .header .header-portion {
