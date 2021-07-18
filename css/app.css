@@ -51,6 +51,15 @@ body {
           justify-content: space-between;
 }
 
+.header .header-portion .inner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .header .header-portion .brand {
   -ms-flex-preferred-size: 200px;
       flex-basis: 200px;
@@ -253,7 +262,7 @@ body {
   }
 }
 
-.header .header-portion .search form {
+.header .header-portion .search .searchArea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,7 +275,7 @@ body {
   width: 100%;
 }
 
-.header .header-portion .search form .search-box {
+.header .header-portion .search .searchArea .search-box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,7 +283,7 @@ body {
   width: 100%;
 }
 
-.header .header-portion .search form .search-box .medicineSearch {
+.header .header-portion .search .searchArea .search-box .medicineSearch {
   border: 0;
   background: #EDF3F8;
   padding: 10px 15px;
@@ -284,12 +293,12 @@ body {
   outline: 0;
 }
 
-.header .header-portion .search form .search-box .medicineSearch:focus {
+.header .header-portion .search .searchArea .search-box .medicineSearch:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.header .header-portion .search form .search-box .searchButton {
+.header .header-portion .search .searchArea .search-box .searchButton {
   width: 54px;
   border: 0;
   background: #3b7cff;
@@ -302,7 +311,7 @@ body {
   height: 37px;
 }
 
-.header .header-portion .search form .search-box .searchButton:hover {
+.header .header-portion .search .searchArea .search-box .searchButton:hover {
   background: #117ed7;
 }
 

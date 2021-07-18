@@ -61,7 +61,9 @@ body {
     position: relative;
     justify-content: space-between;
 
-
+    .inner-box{
+      display: flex;flex: 1;
+    }
 
     .brand {
       flex-basis: 200px;
@@ -212,7 +214,7 @@ body {
         display: none;
       }
 
-      form {
+      .searchArea {
         display: flex;
         justify-content: center;
         align-items: center;
