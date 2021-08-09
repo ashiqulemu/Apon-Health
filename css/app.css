@@ -869,6 +869,7 @@ body {
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
+  color: black;
 }
 
 .productSlider .coating .slider .arrow i {
